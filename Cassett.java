@@ -59,7 +59,7 @@ public class Cassett implements AnalogAlbum{
      * @return song that was forwarded to
      */
     public String ffwd(){
-        if(currentIndex > 4) return "At the end of the cassett you need to rewind";
+        if(currentIndex >= 4) return "At the end of the cassett you need to rewind";
         currentIndex++;
         if(currentIndex == 4) return "Forwarded to the end of the cassett";
         
